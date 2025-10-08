@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>User</title>
-
     </head>
     <body>
         <h2>Thông tin người dùng</h2>
@@ -13,10 +12,9 @@
                 this.NAME=NAME;
                 this.AGE=AGE;
                 this.Intt = function(){
-                    document.write("NAME:"+User1.NAME+"<br>"+"AGE:"+User1.AGE
-                        +"<br>")
+                    document.write("NAME:"+this.NAME+"<br>"+"AGE:"+this.AGE+"<br>");
                     if(this.surname){
-                        document.write("Surname:"+User1.surname +"<br>")
+                        document.write("Surname:"+this.surname +"<br>");
                     }
                 }
             }
