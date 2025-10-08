@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Chuyển số nhị phân</title>
+    </head>
+    <body>
+        <script>
+            function Brinary(n){
+                this.n=n;
+                this.Dec = function(){
+                    var kq=0;
+                    for(var i=0;i<this.n.length;i++){
+                        var bit =this.n[this.n.length-1-i];
+                        kq= kq + bit*Math.pow(2,i);
+                    }
+                    return kq;
+                }
+            }
+            var so = new Brinary("11011011");
+            document.write("Số nhị phân:"+so.n+"(2)"+"<br>");
+            document.write("Số thập phân:"+so.Dec()+"(10)"+"<br>");
+        </script>
+    </body>
+</html>
