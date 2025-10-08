@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <title>Số nguyên tố</title>
+</head>
+<body>
+  <script>
+    function laNguyenTo(x) {
+       if (x < 2) return false;
+         for (var i = 2; i <= Math.sqrt(x); i++) {
+       if (x % i == 0) return false;
+        }
+        return true;
+       }
+    function lietKe(n) {
+       document.write("Các số nguyên tố nhỏ hơn " + n + " là: ");
+        for (var i = 2; i < n; i++) {
+           if (laNguyenTo(i)) document.write(i + " ");
+           }
+       }
+       lietKe(20);
+</script>
+</body>
+</html>

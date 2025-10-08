@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>User</title>
+
+    </head>
+    <body>
+        <h2>Thông tin người dùng</h2>
+        <div id="std"></div>
+        <script>
+            function User(NAME,AGE){
+                this.NAME=NAME;
+                this.AGE=AGE;
+                this.Intt = function(){
+                    document.write("NAME:"+User1.NAME+"<br>"+"AGE:"+User1.AGE
+                        +"<br>")
+                    if(this.surname){
+                        document.write("Surname:"+User1.surname +"<br>")
+                    }
+                }
+            }
+            var User1 = new User("MAX","20");
+            User1.Intt();
+            document.write("=================================<br>");
+            User1.surname="Lee";
+            User1.Intt();
+            document.write("=================================<br>");
+            User1.AGE=30;
+            User1.Intt();
+        </script>
+    </body>
+</html>

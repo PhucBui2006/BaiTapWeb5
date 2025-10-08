@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hàm đảo ngược</title>
+    </head>
+    <body>
+        <script>
+            function Dao(n){
+                var soDao=0;
+                while(n!=0){
+                    var chuSo=n%10;
+                    soDao=soDao*10+chuSo;
+                    n=Math.floor(n/10);
+                }
+                return soDao;
+            }
+            document.write("Kết quả:"+Dao(654321));
+        </script>
+    </body>
+</html>

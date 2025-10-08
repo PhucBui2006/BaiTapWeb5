@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Student object exam</title>
+
+    </head>
+    <body>
+        <h2>Thông tin sinh viên</h2>
+        <div id="std"></div>
+        <script>
+            function Student(name,numberID,gender){
+                this.name=name;
+                this.numberID=numberID;
+                this.gender=gender;
+                this.Intt=function(){
+                    document.write("Tên:"+Student1.name+"<br>"+"ID:"+Student1.numberID
+            +"<br>"+"Gender:"+Student1.gender)
+                }
+            }
+            var Student1 = new Student("Thái","456","nam");
+            Student1.Intt();
+        </script>
+    </body>
+</html>
