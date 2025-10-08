@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Lãi suất
+        </title>
+    </head>
+    <body>
+        <script>
+            function LaiSuat(von,lai,nam){
+                this.von=von;
+                this.lai=lai;
+                this.nam=nam;
+                this.Tinh=function(){
+                    var kq;
+                    kq=this.von*Math.pow((1+this.lai/100),this.nam);
+                    return kq;
+                }
+            }
+            var ls= new LaiSuat(10000000,5,6);
+            document.write("Lãi suất sau "+ls.nam+" năm là:"+ls.Tinh().toFixed(2));
+        </script>
+    </body>
+</html>

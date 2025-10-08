@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+   </head>
+   <body>
+       <script>
+           var now = new Date();
+           var ngay = now.getDate();          
+           var thang = now.getMonth() + 1;    
+           var nam = now.getFullYear();       
+           var gio = now.getHours();          
+           var phut = now.getMinutes();       
+           var giay = now.getSeconds();       
+           var hienThi = "Ngày:" + ngay + "/" + thang + "/" + nam +
+                      " Giờ: " + gio + ":" + phut + ":" + giay ;
+        alert(hienThi);
+       </script>
+   </body>
+</html>

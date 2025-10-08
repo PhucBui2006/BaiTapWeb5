@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tính giai thừa</title>
+    </head>
+    <body>
+        <script>
+            function GiaiThua(n){
+                this.n=Math.floor(Math.abs(n));
+                this.Tinh = function(){
+                    var kq=1;
+                    for(var i=1;i<=this.n;i++){
+                        kq=kq*i;
+                    }
+                    return kq;
+                }
+            }
+            var m = new GiaiThua(6);
+            document.write("Kết quả là:"+m.Tinh());
+        </script>
+    </body>
+</html>
